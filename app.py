@@ -154,7 +154,7 @@ with st.sidebar:
     st.markdown("---")
     page = st.radio(
         "Navigation",
-        ["🏠 Accueil", "🔮 Prédiction", "📊 Dashboard", "ℹ️ À propos"],
+        [" Accueil", " Prédiction", " Dashboard", " À propos"],
         label_visibility="hidden"
     )
     st.markdown("---")
@@ -164,7 +164,7 @@ with st.sidebar:
     
     
     # ─── PAGE ACCUEIL ─────
-if page == "🏠 Accueil":
+if page == " Accueil":
     st.markdown('<p class="main-title">🛒 Segmentation Clients RFM</p>', unsafe_allow_html=True)
     st.markdown("---")
 
@@ -282,7 +282,7 @@ if page == " Prédiction":
     
  # ─── PAGES EN CONSTRUCTION (temporaire) ──────────────────────
 # ─── PAGE DASHBOARD ──────────────────────────────────────────
-if page == "📊 Dashboard":
+if page == " Dashboard":
     st.markdown('<p class="main-title">📊 Tableau de Bord des Segments</p>', unsafe_allow_html=True)
     st.markdown("---")
 
@@ -360,7 +360,7 @@ if page == "📊 Dashboard":
 
     st.dataframe(recap, use_container_width=True)
 # ─── PAGE À PROPOS ───────────────────────────────────────────
-if page == "ℹ️ À propos":
+if page == " À propos":
     st.markdown('<p class="main-title">ℹ️ À propos du projet</p>', unsafe_allow_html=True)
     st.markdown("---")
 
