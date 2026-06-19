@@ -185,14 +185,7 @@ if page == "🏠 Accueil":
         - **M** (Monetary) : montant total dépensé
         """)
 
-    with col2:
-        st.markdown("### 🤖 Le Modèle")
-        st.markdown("""
-        - **Algorithme** : K-Means
-        - **Nombre de segments** : 4
-        - **Validation** : méthode du coude + silhouette
-        - **Clients analysés** : 4 338
-        """)
+    
 
         st.markdown("### 📋 Comment utiliser")
         st.markdown("""
@@ -225,14 +218,14 @@ if page == "🏠 Accueil":
             
             
             # ─── PAGE PRÉDICTION ─────────────────────────────────────────
-if page == "🔮 Prédiction":
-    st.markdown('<p class="main-title">🔮 Prédire le Segment d\'un Client</p>', unsafe_allow_html=True)
+if page == " Prédiction":
+    st.markdown('<p class="main-title"> Prédire le Segment d\'un Client</p>', unsafe_allow_html=True)
     st.markdown("---")
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 📝 Saisir les valeurs du client")
+        st.markdown("###  Saisir les valeurs du client")
 
         recency = st.number_input(
             "Recency (jours depuis le dernier achat)",
@@ -283,7 +276,7 @@ if page == "🔮 Prédiction":
             st.info(profils[cluster])
 
         else:
-            st.info("👆 Saisissez les valeurs et cliquez sur le bouton")
+            st.info(" Saisissez les valeurs et cliquez sur le bouton")
             
             
     
@@ -318,7 +311,7 @@ if page == "📊 Dashboard":
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 🥧 Répartition des segments")
+        st.markdown("###  Répartition des segments")
 
         fig, ax = plt.subplots(figsize=(5, 5))
         colors = ['#22c55e', '#ef4444', '#f59e0b', '#7c3aed']
