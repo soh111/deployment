@@ -128,8 +128,8 @@ st.markdown("""
 # ─── Charger le modèle et les données ────────────────────────
 @st.cache_resource
 def load_model():
-    kmeans = joblib.load("model/kmeans_model.pkl")
-    scaler = joblib.load("model/scaler.pkl")
+    kmeans = joblib.load("kmeans_model.pkl")
+    scaler = joblib.load("scaler.pkl")
     return kmeans, scaler
 
 @st.cache_data
